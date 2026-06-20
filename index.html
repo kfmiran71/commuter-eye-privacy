@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Commuter Eye is a mobile transit app for NYC subway riders with arrivals, official MTA alerts, rider reports, favorite stations, and notification preferences."
+    />
+    <title>Commuter Eye</title>
+    <link rel="icon" href="./assets/favicon.png" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Commuter Eye home">
+        <img src="./assets/commuter-eye-logo.png" alt="" />
+        <span>Commuter Eye</span>
+      </a>
+      <nav aria-label="Site navigation">
+        <a href="#features">Features</a>
+        <a href="#beta">Beta</a>
+        <a href="#support">Support</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Built for NYC subway riders</p>
+          <h1>Smarter subway alerts for the routes and stations you actually use.</h1>
+          <p class="hero-copy">
+            Commuter Eye brings arrivals, official MTA notices, rider-submitted incidents, and commuter preferences
+            into one quick mobile view.
+          </p>
+          <div class="hero-actions" aria-label="Commuter Eye beta actions">
+            <a class="button primary" href="mailto:kfmiran@commutereye.com?subject=Commuter%20Eye%20Beta%20Access">
+              Request beta access
+            </a>
+            <a class="button secondary" href="#features">See what it does</a>
+          </div>
+        </div>
+
+        <div class="phone-preview" aria-label="Commuter Eye app preview">
+          <div class="phone-status">
+            <span>7:15</span>
+            <span>5G</span>
+          </div>
+          <div class="app-topbar">Arrivals</div>
+          <div class="station-head">
+            <span class="route route-1">1</span>
+            <strong>Dyckman St</strong>
+          </div>
+          <div class="arrival-card">
+            <div class="arrival-card-head">
+              <strong>Northbound</strong>
+              <span>1 alert</span>
+            </div>
+            <div class="notice">
+              <span class="route route-1 small">1</span>
+              <p>Uptown trains are running with delays while crews address a signal malfunction.</p>
+              <small>Happening now</small>
+            </div>
+            <div class="train-row">
+              <span class="route route-1">1</span>
+              <div>
+                <strong>Van Cortlandt Park-242 St</strong>
+                <p>3 min • 9 min • 18 min</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro-strip" aria-label="Commuter Eye highlights">
+        <div>
+          <strong>Favorite routes</strong>
+          <p>Choose the lines you rely on.</p>
+        </div>
+        <div>
+          <strong>Favorite stations</strong>
+          <p>Save home, work, school, and regular stops.</p>
+        </div>
+        <div>
+          <strong>Focused banners</strong>
+          <p>Get alerts that match your actual commute.</p>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <p class="eyebrow">What Commuter Eye does</p>
+        <h2>Transit information tuned to your daily habits.</h2>
+        <div class="feature-grid">
+          <article>
+            <span class="feature-icon">A</span>
+            <h3>Arrivals and service alerts</h3>
+            <p>See arrivals for the station you open most often, with matched official MTA alerts nearby.</p>
+          </article>
+          <article>
+            <span class="feature-icon">!</span>
+            <h3>Rider-submitted incidents</h3>
+            <p>Share short, station-specific updates so other riders can understand what is happening now.</p>
+          </article>
+          <article>
+            <span class="feature-icon">◎</span>
+            <h3>Recommended settings</h3>
+            <p>Set home base, work base, school, place of worship, or other regular stations without digging.</p>
+          </article>
+          <article>
+            <span class="feature-icon">↗</span>
+            <h3>Useful notifications</h3>
+            <p>Choose favorite route incidents, unexpected disruptions, planned service changes, and activity alerts.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split-section">
+        <div>
+          <p class="eyebrow">Made for quick checks</p>
+          <h2>Open the app, see the commute that matters first.</h2>
+          <p>
+            Commuter Eye can use favorite stations and location permission to show the nearest regular station when
+            Arrivals opens. Riders stay in control, but the app can take a little work off their plate.
+          </p>
+        </div>
+        <div class="settings-preview" aria-label="Recommended Settings preview">
+          <h3>Recommended Settings</h3>
+          <div class="settings-row">
+            <span>⌂</span>
+            <div><strong>Home base</strong><p>1 saved, 3 New Lots Av</p></div>
+          </div>
+          <div class="settings-row">
+            <span>▣</span>
+            <div><strong>Work base</strong><p>3 saved</p></div>
+          </div>
+          <div class="toggle-row">
+            <div><strong>Nearest Favorite Station</strong><p>Use location when Arrivals opens</p></div>
+            <span class="toggle-on" aria-hidden="true"></span>
+          </div>
+        </div>
+      </section>
+
+      <section id="beta" class="section beta-section">
+        <p class="eyebrow">Beta testing</p>
+        <h2>Help shape the commuter workflow before launch.</h2>
+        <p>
+          Beta testers can help improve alert accuracy, station defaults, notification behavior, and the small daily
+          decisions that make a transit app feel trustworthy.
+        </p>
+        <a class="button primary" href="mailto:kfmiran@commutereye.com?subject=Commuter%20Eye%20Beta%20Testing">
+          Ask to join the beta
+        </a>
+      </section>
+
+      <section id="support" class="section support-section">
+        <p class="eyebrow">Support</p>
+        <h2>Questions, feedback, or beta access?</h2>
+        <p>Email <a href="mailto:kfmiran@commutereye.com">kfmiran@commutereye.com</a>.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Commuter Eye</span>
+      <nav aria-label="Footer links">
+        <a href="./privacy-policy/">Privacy Policy</a>
+        <a href="#support">Support</a>
+        <a href="mailto:kfmiran@commutereye.com">Contact</a>
+      </nav>
+    </footer>
+  </body>
+</html>
