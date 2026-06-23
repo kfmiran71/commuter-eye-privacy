@@ -26,10 +26,15 @@ html {
 
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 a {
   color: inherit;
+}
+
+img {
+  max-width: 100%;
 }
 
 .site-header {
@@ -270,19 +275,21 @@ p {
 .split-section {
   display: grid;
   gap: 22px;
+  overflow: hidden;
 }
 
 .settings-phone {
   background: #0f2730;
-  border: 10px solid #081923;
-  border-radius: 34px;
+  border: 8px solid #081923;
+  border-radius: 38px;
   box-shadow: var(--shadow);
   justify-self: center;
   margin: 0;
-  max-width: 360px;
-  padding: 24px 10px 10px;
+  max-width: 340px;
+  overflow: hidden;
+  padding: 22px 8px 8px;
   position: relative;
-  width: min(100%, 360px);
+  width: min(86vw, 340px);
 }
 
 .settings-phone-speaker {
@@ -297,12 +304,9 @@ p {
 }
 
 .settings-phone img {
-  border-radius: 22px;
+  border-radius: 28px;
   display: block;
   height: auto;
-  max-height: 710px;
-  object-fit: contain;
-  object-position: top center;
   width: 100%;
 }
 
