@@ -279,7 +279,7 @@ p {
 }
 
 .commute-voice-block {
-  margin-top: 48px;
+  margin-top: 56px;
 }
 
 .split-section > div > p,
@@ -469,6 +469,10 @@ p {
   .split-section {
     align-items: start;
     grid-template-columns: 1fr minmax(360px, 520px);
+  }
+
+  .commute-voice-block {
+    margin-top: clamp(220px, 24vw, 350px);
   }
 
   .showcase-screenshot {
