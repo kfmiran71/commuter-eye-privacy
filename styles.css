@@ -278,36 +278,35 @@ p {
   overflow: hidden;
 }
 
-.settings-phone {
-  background: #0f2730;
-  border: 8px solid #081923;
-  border-radius: 38px;
-  box-shadow: var(--shadow);
-  justify-self: center;
+.settings-showcase {
+  display: grid;
+  gap: 16px;
+  justify-items: center;
   margin: 0;
-  max-width: 340px;
-  overflow: hidden;
-  padding: 22px 8px 8px;
-  position: relative;
-  width: min(86vw, 340px);
+  overflow: visible;
 }
 
-.settings-phone-speaker {
-  background: rgba(255, 255, 255, 0.28);
-  border-radius: 999px;
-  height: 5px;
-  left: 50%;
-  position: absolute;
-  top: 10px;
-  transform: translateX(-50%);
-  width: 72px;
+.showcase-row {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, minmax(0, auto));
+  justify-content: center;
 }
 
-.settings-phone img {
+.showcase-screenshot {
+  aspect-ratio: 1320 / 2868;
+  background: #ffffff;
+  border: 8px solid #07181f;
   border-radius: 28px;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.24);
   display: block;
   height: auto;
-  width: 100%;
+  object-fit: cover;
+  width: clamp(92px, 28vw, 200px);
+}
+
+.screenshot-recommended {
+  object-position: top center;
 }
 
 .beta-section {
@@ -459,7 +458,11 @@ p {
 
   .split-section {
     align-items: center;
-    grid-template-columns: 1fr 420px;
+    grid-template-columns: 1fr minmax(360px, 520px);
+  }
+
+  .showcase-screenshot {
+    width: clamp(128px, 15vw, 210px);
   }
 
   .site-footer {
