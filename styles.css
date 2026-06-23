@@ -272,16 +272,35 @@ p {
   gap: 22px;
 }
 
-.settings-screenshot {
+.settings-phone {
+  background: #0f2730;
+  border: 10px solid #081923;
+  border-radius: 34px;
+  box-shadow: var(--shadow);
+  justify-self: center;
   margin: 0;
+  max-width: 360px;
+  padding: 24px 10px 10px;
+  position: relative;
+  width: min(100%, 360px);
 }
 
-.settings-screenshot img {
-  border-radius: 18px;
-  box-shadow: var(--shadow);
+.settings-phone-speaker {
+  background: rgba(255, 255, 255, 0.28);
+  border-radius: 999px;
+  height: 5px;
+  left: 50%;
+  position: absolute;
+  top: 10px;
+  transform: translateX(-50%);
+  width: 72px;
+}
+
+.settings-phone img {
+  border-radius: 22px;
   display: block;
   height: auto;
-  max-height: 740px;
+  max-height: 710px;
   object-fit: contain;
   object-position: top center;
   width: 100%;
