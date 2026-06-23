@@ -230,7 +230,6 @@ p {
 
 .intro-strip div,
 .feature-grid article,
-.settings-preview,
 .faq-section details,
 .beta-section,
 .support-section {
@@ -273,52 +272,19 @@ p {
   gap: 22px;
 }
 
-.settings-preview {
-  background: #f3f7f8;
+.settings-screenshot {
+  margin: 0;
 }
 
-.settings-row,
-.toggle-row {
-  align-items: center;
-  background: #ffffff;
-  border-radius: 14px;
-  display: flex;
-  gap: 14px;
-  margin-top: 12px;
-  padding: 14px;
-}
-
-.settings-row span {
-  color: var(--teal);
-  font-size: 26px;
-}
-
-.settings-row p,
-.toggle-row p {
-  margin: 2px 0 0;
-}
-
-.toggle-row {
-  justify-content: space-between;
-}
-
-.toggle-on {
-  background: var(--teal);
-  border-radius: 999px;
-  height: 34px;
-  position: relative;
-  width: 62px;
-}
-
-.toggle-on::after {
-  background: #ffffff;
-  border-radius: 50%;
-  content: "";
-  height: 26px;
-  position: absolute;
-  right: 4px;
-  top: 4px;
-  width: 26px;
+.settings-screenshot img {
+  border-radius: 18px;
+  box-shadow: var(--shadow);
+  display: block;
+  height: auto;
+  max-height: 740px;
+  object-fit: contain;
+  object-position: top center;
+  width: 100%;
 }
 
 .beta-section {
