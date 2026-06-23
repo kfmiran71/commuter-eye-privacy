@@ -278,22 +278,14 @@ p {
   overflow: hidden;
 }
 
-.commute-voice-block {
-  margin-top: 56px;
-}
-
-.split-section > div > p,
-.commute-voice-block p {
+.split-copy p {
   font-size: 18px;
   max-width: 640px;
 }
 
-.settings-showcase {
-  display: grid;
-  gap: 16px;
-  justify-items: center;
+.showcase-top,
+.showcase-row {
   margin: 0;
-  overflow: visible;
 }
 
 .showcase-row {
@@ -468,11 +460,29 @@ p {
 
   .split-section {
     align-items: start;
+    column-gap: clamp(56px, 8vw, 140px);
     grid-template-columns: 1fr minmax(360px, 520px);
+    grid-template-areas:
+      "copy-top screen-top"
+      "copy-bottom screen-bottom";
+    row-gap: 16px;
   }
 
-  .commute-voice-block {
-    margin-top: clamp(220px, 24vw, 350px);
+  .split-copy-top {
+    grid-area: copy-top;
+  }
+
+  .showcase-top {
+    grid-area: screen-top;
+    justify-self: center;
+  }
+
+  .split-copy-bottom {
+    grid-area: copy-bottom;
+  }
+
+  .showcase-row {
+    grid-area: screen-bottom;
   }
 
   .showcase-screenshot {
